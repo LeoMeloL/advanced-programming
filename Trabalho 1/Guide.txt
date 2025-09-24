@@ -1,0 +1,8 @@
+Bolinhas/linas coloridas que se movem na tela
+Passar o mouse em cima deve avisar qual bolinha/linha está em cima
+Fazer em 2D, bem simples. 
+
+Prazo - 24/09
+
+Botar uma tabela no git com o nome do trabalho, ultima data de modificação, link para a pasta do git, e escrever 
+se fez tudo ou não
