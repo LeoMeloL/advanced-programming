@@ -8,4 +8,4 @@ Leonardo Lavadouro de Melo
 
 | Trabalho      | Última Modificação | Link no Git | Funcionando? |
 |---------------|-----------------|-------------|--------------|
-| Trabalho 1    | 24/09/2025       | [trabalho1](Trabalho%201/) | Sim |
+| Trabalho 1    | 25/09/2025       | [trabalho1](Trabalho%201/) | Sim |
