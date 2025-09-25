@@ -19,5 +19,4 @@ O log exportado contém as seguintes informações:
 -  **Objetos clicados**, incluindo:
   - Qual objeto foi clicado.  
   - Quantas vezes foi clicado.  
-  - O momento exato em que ocorreu.  
 ---
