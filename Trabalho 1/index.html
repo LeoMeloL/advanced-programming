@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulação</title>
+  <style>
+    canvas {
+      display: block;
+      margin: auto;
+      background: #111;
+    }
+
+    #tooltip {
+      position: absolute;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      pointer-events: none;
+      display: none;
+    }
+
+    #fixedTooltip {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(50,50,50,0.85);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      display: none;
+    }
+
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    #controls button {
+      padding: 8px 16px;
+      font-size: 14px;
+      background-color: #333;
+      color: white;
+      border: 1px solid #555;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    #controls button:hover {
+      background-color: #444;
+    }
+
+    #controls button:disabled {
+      background-color: #222;
+      color: #666;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="tooltip"></div>
+  <div id="fixedTooltip"></div>
+  <div id="controls">
+    <button id="pauseBtn">Pausar</button>
+    <button id="resumeBtn" disabled>Resumir</button>
+    <button id="slowDownBtn">Desacelerar</button>
+    <button id="speedUpBtn">Acelerar</button>
+    <button id="exportBtn">Exportar Dados</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
