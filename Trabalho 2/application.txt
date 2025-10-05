@@ -1,0 +1,16 @@
+# Aplicação do Diagrama de Voronoi: Geração Procedural de Mapas e Biomas
+
+Uma aplicação do diagrama de Voronoi é a geração procedural de conteúdo (PCG), especialmente na criação de mapas para jogos e simulações.
+
+## Como funciona?
+
+Vamos supor que você quer criar um mapa de um continente fictício com diferentes reinos, climas ou "biomas" (florestas, desertos, montanhas, etc.). O processo pode ser o seguinte:
+
+1.  **Geração dos "Sítios":** Espalhe um número de pontos aleatoriamente sobre uma área retangular. Cada ponto será o "coração" ou a "capital" de uma futura região.
+
+2.  **Cálculo do Diagrama de Voronoi:** Calcule o diagrama de Voronoi para esses pontos. O resultado é uma divisão perfeita do mapa em polígonos (células de Voronoi). Cada célula representa a área que está mais próxima do seu ponto gerador do que de qualquer outro. Essas células se tornam as fronteiras naturais das nossas regiões/reinos.
+
+3.  **Atribuição de Propriedades:** Para cada célula, nós podemos atribuir propriedades de forma procedural. Por exemplo:
+    * **Elevação:** Células próximas à "costa" podem ter elevação baixa, enquanto as centrais podem ser montanhosas.
+    * **Clima/Bioma:** A latitude do ponto central da célula pode determinar se ela é uma tundra (norte), deserto (centro) ou floresta tropical (sul).
+    * **Umidade:** Células próximas a rios (desenhados ao longo das bordas do Voronoi) podem ser mais úmidas, gerando pântanos ou florestas densas.

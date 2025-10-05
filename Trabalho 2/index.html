@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Voronoi e Triangulação de Delaunay</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        #controls {
+            margin: 15px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        canvas {
+            border: 1px solid #000;
+            background-color: #fff;
+            cursor: crosshair;
+        }
+        button {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Diagrama de Voronoi e Delaunay Interativo</h1>
+    <div id="controls">
+        <label>
+            <input type="checkbox" id="showVoronoi" checked> Mostrar Voronoi
+        </label>
+        <label>
+            <input type="checkbox" id="showDelaunay" checked> Mostrar Delaunay (Dual)
+        </label>
+        <button id="clearButton">Limpar Pontos</button>
+        <button id="exportButton">Exportar Dados</button>
+        <button id="addRandomPoints" >Random</button>
+        <button id="addGridPointsButton">Grade</button>
+        <button id="addLinePointsButton">Colineares</button>
+    </div>
+
+    <canvas id="voronoiCanvas" width="800" height="600"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
