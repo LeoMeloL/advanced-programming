@@ -9,3 +9,5 @@ Leonardo Lavadouro de Melo
 | Trabalho      | Última Modificação | Link no Git | Funcionando? |
 |---------------|-----------------|-------------|--------------|
 | Trabalho 1    | 25/09/2025       | [trabalho1](Trabalho%201/) | Sim |
+|---------------|-----------------|-------------|--------------|
+| Trabalho 2    | 05/10/2025 11:20| [trabalho2](Trabalho%202/) | Sim |
