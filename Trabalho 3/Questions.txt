@@ -1,0 +1,13 @@
+1) Qual a relação da envoltória complexa com o diagrama de voronoi ?
+
+A envoltória convexa representa o menor polígono convexo que contém todos os pontos de um conjunto — ou seja, a “fronteira externa” dos pontos.
+
+O diagrama de Voronoi divide o plano em regiões de influência, onde cada célula contém todos os pontos mais próximos de um ponto específico do conjunto.
+
+A conexão entre ambos surge porque a envoltória convexa corresponde à fronteira externa do diagrama de Voronoi: os pontos que formam a envoltória convexa também são aqueles que possuem células de Voronoi não limitadas, isto é, suas regiões se estendem para o infinito.
+
+
+2) Existe diferença no custo computacional dependendo da distribuição dos pontos ?
+
+Embora o custo teórico do algoritmo Monotone Chain seja O(n log n) — dominado pela ordenação —, na prática, o custo varia com a distribuição dos pontos.
+Distribuições que resultam em mais pontos na envoltória (como pontos dispostos em círculo) tendem a apresentar maior custo real devido a mais comparações e operações no passo de construção da envoltória.

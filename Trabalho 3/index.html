@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Envoltória Convexa - Monotone Chain</title>
+  <style>
+    /* ======= Reset ======= */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #e94560;
+      text-shadow: 0 0 8px rgba(233, 69, 96, 0.5);
+    }
+
+    /* ======= Canvas ======= */
+    canvas {
+      border: 2px solid #e94560;
+      border-radius: 12px;
+      background: radial-gradient(circle at center, #0f3460 0%, #0a1931 100%);
+      cursor: crosshair;
+      box-shadow: 0 0 20px rgba(233, 69, 96, 0.3);
+      max-width: 1400px;
+    }
+
+    canvas:hover {
+      box-shadow: 0 0 25px rgba(233, 69, 96, 0.5);
+    }
+
+    /* ======= Painel de Botões ======= */
+    .controls {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    button {
+      background: #0f3460;
+      border: 2px solid #e94560;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background: #e94560;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(233, 69, 96, 0.6);
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Algoritmo de Envoltória Convexa (Monotone Chain)</h1>
+
+  <canvas id="canvas" width="900" height="400"></canvas>
+
+  <div class="controls">
+    <button id="clearButton">Limpar</button>
+    <button id="generateRandom">Gerar Pontos Aleatórios</button>
+    <button id="generateCircle">Gerar Círculo</button>
+    <button id="generateRectangle">Gerar Retângulo</button>
+    <button id="exportData">Exportar JSON</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
