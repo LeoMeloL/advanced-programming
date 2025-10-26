@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minkowski Addition</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        canvas {
+            border: 1px solid black;
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        #exportButton {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minkowski Addition</h1>
+    <p>Blue (Robot), Red (Obstacle), Green (Addition)</p>
+    
+    <button id="generateButton">Generate Polygons (Visual)</button>
+    <button id="exportButton">Generate and Export simulation data (JSON)</button>
+    <br><br>
+    <canvas id="minkowskiCanvas" width="800" height="600"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
