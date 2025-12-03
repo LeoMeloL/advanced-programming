@@ -15,3 +15,4 @@ Leonardo Lavadouro de Melo
 | Trabalho 5    | 12/11/2025 21:51 | [trabalho5](Trabalho%205/) | Sim|
 | Trabalho 6    | 20/11/2025 11:33 | [trabalho6](Trabalho%206/) | Sim|
 | Trabalho 7    | 25/11/2025 20:37 | [trabalho7](Trabalho%207/) | Sim|
+| Trabalho 8    | 02/12/2025 21:30 | [trabalho8](Trabalho%208/) | Sim|
